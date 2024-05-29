@@ -1,6 +1,5 @@
-import { Location } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
@@ -17,7 +16,7 @@ import { WebsocketService } from 'src/app/core/services/websocket.service';
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.scss']
 })
-export class ChatComponent implements OnInit {
+export class ChatComponent implements OnInit, OnDestroy {
 
   @ViewChild('chatbox') chatbox!: ElementRef<any>;
   @ViewChild('textarea') textarea!: ElementRef<HTMLTextAreaElement>
@@ -50,6 +49,12 @@ export class ChatComponent implements OnInit {
     private activeRoute: ActivatedRoute,
     private router: Router,
   ) { }
+  ngOnDestroy(): void {
+    if(this.webSocketService.isConnected()) {
+      this.webSocketService.disconnect();
+    }
+    this.webSocketService.mensagemRespostaSubject.next({} as Mensagem);
+  }
 
   ngOnInit(): void {
 
