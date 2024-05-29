@@ -14,7 +14,7 @@
                 [ngClass]="{'visible opacity-100': tituloChatVisivel, 'invisible opacity-0': !tituloChatVisivel}">
                 <input type="text" [formControl]="novaConversaFormControl"
                     [ngClass]="{'border-red-600 focus:border-red-600': submitted && novaConversaFormControl.errors}"
-                    class="shadow-md rounded-full py-1 px-3 placeholder-gray-400 w-full focus:outline-none focus:ring-0"
+                    class="shadow-md rounded-full py-1 px-3 border border-[#eee] placeholder-gray-400 w-full focus:outline-none focus:ring-0"
                     placeholder="Título da conversa" />
                 <button class="bg-blue-uai py-1 px-3 rounded-full text-white mt-3" (click)="criarChat()">
                     Iniciar
@@ -26,7 +26,7 @@
         </div>
 
         <div class="flex justify-end items-center relative">
-            <input type="text" placeholder="Pesquisar" class="border shadow-md rounded-full py-1 ps-4 pe-12 w-full placeholder-gray-400"
+            <input type="text" placeholder="Pesquisar" class="border border-[#eee] shadow-md rounded-full py-1 ps-4 pe-12 w-full placeholder-gray-400"
                 [formControl]="pesquisaFormControl" />
             <div class="absolute bg-blue-uai p-1.5 rounded-full mr-1">
                 <img src="../../../assets/imgs/mystery.svg" class=" w-4 h-4 " alt="Icone de lupa" />
@@ -42,7 +42,7 @@
                 <div class="mr-3 min-w-4 min-h-4 col-span-1">
                     <img src="../../../assets/imgs/chat_bubble.svg" alt="Icone de chat" />
                 </div>
-                <span class="font-semibold overflow-hidden whitespace-nowrap text-ellipsis col-span-5">{{ topico.titulo
+                <span class="font-medium overflow-hidden whitespace-nowrap text-ellipsis col-span-5">{{ topico.titulo
                     }}</span>
                 <!-- <div class="bg-blue-uai-70 p-1.5 rounded-full ml-6">
                     <img src="../../../assets/imgs/close.svg" class=" w-2 h-2" alt="Icone de fechar" />

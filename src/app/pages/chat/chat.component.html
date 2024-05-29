@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="flex justify-between items-center">
-                    <span class="font-semibold mr-3 text-ellipsis text-nowrap overflow-hidden max-sm:max-w-40">
+                    <span class="font-medium mr-3 text-ellipsis text-nowrap overflow-hidden max-sm:max-w-40">
                         <span>{{nomeUsuario}}</span>
                     </span>
                     <div class="flex justify-center rounded-full bg-purple-uai-50 p-3 w-12 h-12">
@@ -50,7 +50,7 @@
                         <img src="../../../assets/imgs/icon-logo-white.svg" alt="Icone uAi" class="max-w-10 p-3" />
                     </div>
 
-                    <div class="bg-blue-uai-10 p-3 rounded-tr-lg rounded-tl-lg rounded-br-lg break-words lg:w-max"
+                    <div class="bg-blue-uai-10 p-3 rounded-tr-lg rounded-tl-lg rounded-br-lg break-words max-w-[70%]"
                         *ngIf="mensagem.origemMensagem !== 'USUARIO_ABERTURA'">
                         <span>{{ mensagem.texto}}</span>
                     </div>
@@ -84,7 +84,7 @@
                 <div class="w-full flex items-center pb-3">
                     <textarea placeholder="Digite uma pergunta para o uAI" [formControl]="mensagemFormControl"
                         #textarea
-                        class="border shadow-md rounded-xl py-3 ps-4 pe-16 w-full placeholder-gray-400 overflow-scrollbar-hidden h-[50px] max-h-[200px]"
+                        class="border resize-none shadow-md rounded-xl py-3 ps-4 pe-16 w-full placeholder-gray-400 overflow-scrollbar-hidden h-[50px] max-h-[200px]"
                         [ngClass]="{'border-red-600 focus:border-red-600 focus:outline-red-600': submitted && mensagemFormControl.errors}"
                         (keypress)="autogrow($event)" (keyup)="checkContent()"
                             (keyup.enter)="btnEnviarMensagem.click()"></textarea>

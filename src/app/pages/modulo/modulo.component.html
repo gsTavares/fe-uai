@@ -7,7 +7,7 @@
     </header>
     <section class="mt-3 border-t-2 flex flex-col">
         <input type="text" placeholder="Digite o título da conversa..." [formControl]="tituloChatFormControl"
-            class="self-center my-6 border shadow-md rounded-full py-3 px-4 w-full placeholder-gray-400"
+            class="self-center my-6 border border-[#eee] shadow-md rounded-full py-3 px-4 w-full placeholder-gray-400"
             [ngClass]="{'border-red-600 focus:border-red-600 focus:outline-red-600': submitted && tituloChatFormControl.errors}" />
 
         <button class="bg-blue-uai py-2 px-5 rounded-full text-white mt-3 self-center mb-3" (click)="criarChat()">
@@ -102,7 +102,7 @@
     <section class="flex flex-col items-center px-16 bg-blue-uai">
         <div class="w-full sm:w-4/5 flex justify-end items-center relative">
             <input placeholder="Pesquisar" [formControl]="pesquisaChatFormControl" type="text"
-                class="border shadow-md rounded-full py-3 ps-4 pe-12 w-full placeholder-gray-400 text-xl relative bottom-7" />
+                class="border border-[#eee] shadow-md rounded-full py-3 ps-4 pe-12 w-full placeholder-gray-400 text-xl relative bottom-7" />
             <div class="absolute bg-blue-uai p-3 rounded-full mr-1.5 cursor-pointer bottom-[34px]">
                 <img src="../../../assets/imgs/mystery.svg" class=" w-4 h-4 " alt="Icone de lupa" />
             </div>
@@ -111,9 +111,9 @@
         <div
             class="flex flex-col gap-y-3 py-6 w-full lg:max-w-[90%] max-h-[350px] overflow-y-scroll overflow-scrollbar-hidden">
             <div *ngFor="let chat of chatsRecentesFiltrados"
-                class="flex items-center rounded-xl p-3 transition-colors duration-300 relative bg-blue-uai hover:bg-blue-uai-ho-35 cursor-pointer"
+                class="group flex items-center rounded-xl p-3 transition-colors duration-300 relative bg-blue-uai cursor-pointer"
                 [routerLink]="['/chat/necessidade/' + chat.idNecessidade]" [queryParams]="{newChatId: chat.id}">
-                <div class="absolute inset-0 bg-white-uai opacity-15 rounded-xl"></div>
+                <div class="absolute inset-0 bg-white-uai opacity-15 rounded-xl group-hover:opacity-35"></div>
                 <div class="grid grid-cols-12 lg:flex justify-start items-center overflow-hidden gap-2">
                     <div class="col-span-1">
                         <img src="../../../assets/imgs/chat_bubble_white.svg" class="text-white-uai lg:h-4 lg:w-4"
