@@ -23,22 +23,24 @@
                 </h1>
             </div>
             <div class="my-4">
-                <p>
-                    uAI oferece soluções inteligentes que automatizam o contato com seus clientes, identificando suas dúvidas e enviando mensagens altamente personalizadas. Assim, você fica no controle absoluto das respostas que procura.
+                <p class="font-medium text-xl text-center sm:text-start">
+                    uAI oferece soluções inteligentes que automatizam o contato com seus clientes, identificando suas
+                    dúvidas e enviando mensagens altamente personalizadas. Assim, você fica no controle absoluto das
+                    respostas que procura.
                 </p>
             </div>
             <div
                 class="flex flex-col w-1/2 mx-auto mt-4 space-y-6 font-semibold sm:flex-row sm:w-full sm:space-y-0 sm:gap-4">
                 <button routerLink="login-cadastro"
                     class="bg-white-uai mx-auto text-blue-uai py-2 px-5 rounded-md sm:px-6 sm:m-0">Começar</button>
-                <button [routerLink]="['/login-cadastro']">Fazer login</button>
+                <button class="font-normal" [routerLink]="['/login-cadastro']">Saber mais +</button>
             </div>
         </div>
     </div>
 
 
 
-    <section class="mt-24 flex justify-center w-full">
+    <section class="flex justify-center w-full">
         <div class="w-3/4 sm:grid md:grid-cols-2 2xl:grid-cols-4 sm:m-0">
             <div class="sm:w-2/3 m-6 mx-auto p-2 rounded-3xl shadow-lg">
                 <img src="../../../assets/imgs/practicality.svg" alt="">
@@ -73,20 +75,22 @@
 
 
 
-    <section class="my-24 flex justify-center w-full">
-        <div class="p-8 sm:px-32 mx-auto text-center space-y-8">
-            <h2 class="text-purple-uai text-5xl font-semibold">Tutorial</h2>
-            <p class="text-xl sm:text-2xl">Bem-vindo onde aprender é fácil e rápido! Posso te mostrar como aproveitar ao máximo nossa plataforma? Aqui você alcança seus objetivos de aprendizagem de forma simples e rápida. Vamos lá!</p>
+    <section class="my-12 flex justify-center w-full">
+        <div class="p-8 sm:px-56 mx-auto text-center space-y-8">
+            <h2 class="text-blue-uai text-4xl sm:text-5xl font-semibold">Tutorial</h2>
+            <p class="text-lg sm:text-2xl font-normal sm:font-medium">Bem-vindo onde aprender é fácil e rápido! Posso te
+                mostrar como aproveitar ao máximo nossa plataforma? Aqui você alcança seus objetivos de aprendizagem de
+                forma simples e rápida. Vamos lá!</p>
             <iframe src="https://www.youtube.com/embed/1eLaBow7Zbo" frameborder="0" allowfullscreen
-    class="w-full rounded-lg" height="500"></iframe>
+                class="w-full rounded-lg" height="500"></iframe>
         </div>
     </section>
 
 
     <section class="relative p-12 px-0 bg-purple-uai text-white">
         <div class="w-2/3 mx-auto text-center space-y-6">
-            <h2 class="text-4xl font-semibold">Depoimentos</h2>
-            <p>Isso é o que falam do nosso aplicativo!</p>
+            <h2 class="text-4xl sm:text-5xl font-semibold">Depoimentos</h2>
+            <p class="text-lg sm:text-2xl font-normal sm:font-medium">Isso é o que falam do nosso aplicativo!</p>
         </div>
         <div class="absolute top-0 right-0 w-16 h-full bg-border-carousel">
         </div>
@@ -96,7 +100,7 @@
                     <div class="relative flex justify-end w-1/2 h-80 mx-auto overflow-hidden rounded-lg">
                         <div class="bg-purple-uai flex duration-700 ease-in-out" data-carousel-item>
                             <div
-                                class="w-96 h-64 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-hidden">
+                                class="w-96 h-60 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-hidden">
                                 <div class="h-full flex flex-col justify-between">
                                     <div class="flex items-center text-purple-uai">
                                         <img src="../../../assets/imgs/user_1.svg">
@@ -112,16 +116,16 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <p class="text-lg text-black font-semibold">"Lorem ipsum dolor sit amet
-                                            consectetur
-                                            adipisicing elit. Consequatur doloribus aliquam praesentium."</p>
+                                        <p class="font-medium text-black">"O uAi tornou os estudos do meu filho mais
+                                            interativos e personalizados, incentivando-o a aprender de maneira mais
+                                            eficaz."</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="bg-purple-uai flex duration-700 ease-in-out" data-carousel-item>
                             <div
-                                class="w-96 h-64 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-hidden">
+                                class="w-96 h-60 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-hidden">
                                 <div class="h-full flex flex-col justify-between">
                                     <div class="flex items-center text-purple-uai">
                                         <img src="../../../assets/imgs/user_2.svg">
@@ -137,16 +141,16 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <p class="text-lg text-black font-semibold">"Lorem ipsum dolor sit amet
-                                            consectetur
-                                            adipisicing elit. Consequatur doloribus aliquam praesentium."</p>
+                                        <p class="font-medium text-black">"Com a ajuda da IA, meu filho conseguiu
+                                            identificar e superar suas dificuldades acadêmicas, melhorando seu
+                                            desempenho escolar."</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="bg-purple-uai flex duration-700 ease-in-out" data-carousel-item>
                             <div
-                                class="w-96 h-64 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto">
+                                class="w-96 h-60 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto">
                                 <div class="h-full flex flex-col justify-between">
                                     <div class="flex items-center text-purple-uai">
                                         <img src="../../../assets/imgs/user_3.svg">
@@ -162,9 +166,9 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <p class="text-lg text-black font-semibold">"Lorem ipsum dolor sit amet
-                                            consectetur
-                                            adipisicing elit. Consequatur doloribus aliquam praesentium."</p>
+                                        <p class="font-medium text-black">"A IA no aplicativo trouxe uma abordagem
+                                            inovadora aos estudos do meu filho, tornando o processo de aprendizado mais
+                                            envolvente e eficiente."</p>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +212,7 @@
             </div>
             <div class="sm:hidden flex overflow-x-auto gap-8 mt-4">
                 <div
-                    class="w-96 h-64 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto shrink-0 ml-16">
+                    class="w-96 h-60 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto shrink-0 ml-16">
                     <div class="h-full flex flex-col justify-between">
                         <div class="flex items-center text-purple-uai">
                             <img src="../../../assets/imgs/user_1.svg">
@@ -224,12 +228,13 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-lg text-black font-semibold">"Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Consequatur doloribus aliquam praesentium."</p>
+                            <p class="font-medium text-black">"O uAi tornou os estudos do meu filho mais
+                                interativos e personalizados, incentivando-o a aprender de maneira mais
+                                eficaz."</p>
                         </div>
                     </div>
                 </div>
-                <div class="w-96 h-64 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto shrink-0">
+                <div class="w-96 h-60 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto shrink-0">
                     <div class="h-full flex flex-col justify-between">
                         <div class="flex items-center text-purple-uai">
                             <img src="../../../assets/imgs/user_2.svg">
@@ -245,12 +250,13 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-lg text-black font-semibold">"Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Consequatur doloribus aliquam praesentium."</p>
+                            <p class="font-medium text-black">"Com a ajuda da IA, meu filho conseguiu
+                                identificar e superar suas dificuldades acadêmicas, melhorando seu
+                                desempenho escolar."</p>
                         </div>
                     </div>
                 </div>
-                <div class="w-96 h-64 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto shrink-0">
+                <div class="w-96 h-60 my-auto p-8 mx-auto text-start bg-white-uai rounded-3xl overflow-auto shrink-0">
                     <div class="h-full flex flex-col justify-between">
                         <div class="flex items-center text-purple-uai">
                             <img src="../../../assets/imgs/user_3.svg">
@@ -266,8 +272,9 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-lg text-black font-semibold">"Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Consequatur doloribus aliquam praesentium."</p>
+                            <p class="font-medium text-black">"A IA no aplicativo trouxe uma abordagem
+                                inovadora aos estudos do meu filho, tornando o processo de aprendizado mais
+                                envolvente e eficiente."</p>
                         </div>
                     </div>
                 </div>
@@ -278,11 +285,13 @@
     <section class="p-8 sm:p-12">
         <div class="flex flex-col justify-between mx-auto sm:flex-row sm:justify-center">
             <div class="text-center space-y-4 sm:w-1/2 sm:text-start sm:px-4 sm:flex sm:flex-col sm:justify-center">
-                <h2 class="text-4xl font-semibold text-blue-uai">Redes sociais</h2>
-                <p class="text-xl">Descubra uma nova forma de se envolver na educação dos seus filhos com o Uai! Além de simplificar o acompanhamento escolar, oferecemos uma comunidade vibrante nas redes sociais, repleta de dicas, atualizações e inspiração.</p>
+                <h2 class="text-4xl sm:text-5xl font-semibold text-blue-uai">Redes sociais</h2>
+                <p class="text-lg sm:text-2xl font-normal sm:font-medium">Descubra uma nova forma de se envolver na
+                    educação dos seus filhos com o Uai! Além de simplificar o acompanhamento escolar, oferecemos uma
+                    comunidade vibrante nas redes sociais, repleta de dicas, atualizações e inspiração.</p>
                 <div class="flex gap-2 sm:justify-start justify-center">
-                    <img src="../../../assets/imgs/facebook-icon.svg" class="h-8 w-8" alt="Icone Facebook"/>
-                    <img src="../../../assets/imgs/instagram-icon.svg" class="h-9 w-9" alt="Icone Instagram"/>
+                    <img src="../../../assets/imgs/facebook-icon.svg" class="h-8 w-8" alt="Icone Facebook" />
+                    <img src="../../../assets/imgs/instagram-icon.svg" class="h-9 w-9" alt="Icone Instagram" />
                 </div>
             </div>
             <div class="mt-4 sm:ml-auto">
@@ -293,11 +302,14 @@
 
 
 
-    <section class="p-8 sm:p-12 bg-blue-uai text-white-uai">
+    <section class="p-8 sm:px-56 bg-blue-uai text-white-uai">
         <div class="mx-auto text-center space-y-6">
-            <h2 class="text-3xl sm:text-4xl font-semibold">Chamada para a ação</h2>
-            <p class="text-md sm:text-xl">Não fique de fora - siga-nos agora para se juntar à conversa e fazer parte de uma rede de pais conectados! Baixe o Uai hoje mesmo e transforme sua abordagem à educação. Juntos, podemos criar um futuro brilhante para nossos filhos.</p>
-            <button class="bg-white-uai text-blue-uai py-1 px-5 rounded-md text-xl" routerLink="login-cadastro">Começar</button>
+            <h2 class="text-4xl sm:text-5xl font-semibold">Junte-se a nós</h2>
+            <p class="text-lg sm:text-2xl font-normal sm:font-medium">Não fique de fora - siga-nos agora para se juntar
+                à conversa e fazer parte de uma rede de pais conectados! Baixe o Uai hoje mesmo e transforme sua
+                abordagem à educação. Juntos, podemos criar um futuro brilhante para nossos filhos.</p>
+            <button class="bg-white-uai text-blue-uai py-1 px-5 rounded-md text-xl"
+                routerLink="login-cadastro">Começar</button>
         </div>
     </section>
 
