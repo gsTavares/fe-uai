@@ -67,9 +67,10 @@ export class LoginCadastroComponent implements OnInit {
             this.moveScroll();
           },
           error: (err) => {
+
             this.errorMessage = err.error.message
 
-            if(err.error?.body) {
+            if (err.error?.body) {
               this.errorMessage = err.error.body.cpf
             } else if (this.errorMessage.includes('duplicate key') && this.errorMessage.includes('cpf')) {
               this.errorMessage = 'O CPF informado já foi cadastrado no sistema';
@@ -90,9 +91,11 @@ export class LoginCadastroComponent implements OnInit {
             this.router.navigate(['/modulo']);
           },
           error: (err) => {
-
-            if(err.error?.body) {
+            this.errorMessage = err.error.message;
+            if (err.error?.body) {
               this.errorMessage = err.error.body.cpf
+            } else if (err.error.message) {
+              this.errorMessage = err.error.message;
             } else {
               this.errorMessage = err.error;
             }
@@ -111,7 +114,7 @@ export class LoginCadastroComponent implements OnInit {
       dataNascimento: [null, Validators.required],
       cpf: [null, Validators.required],
       senha: [null, Validators.required],
-      email: [null],
+      email: [null, [Validators.required, Validators.email]],
       termosUso: [null, Validators.requiredTrue]
     })
   }
