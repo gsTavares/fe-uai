@@ -62,4 +62,12 @@ export class HomeComponent implements OnInit {
     // Alterar a imagem a cada 3 segundos (3000 milissegundos)  
   }
 
+  anchor() {
+    const section = document.getElementById('idAnchor');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+  }
+
 }

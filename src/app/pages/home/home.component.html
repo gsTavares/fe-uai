@@ -33,37 +33,37 @@
                 class="flex flex-col w-1/2 mx-auto mt-4 space-y-6 font-semibold sm:flex-row sm:w-full sm:space-y-0 sm:gap-4">
                 <button routerLink="login-cadastro"
                     class="bg-white-uai mx-auto text-blue-uai py-2 px-5 rounded-md sm:px-6 sm:m-0">Começar</button>
-                <button class="font-normal" [routerLink]="['/login-cadastro']">Saber mais +</button>
+                <button class="font-normal" (click)="anchor()">Saber mais +</button>
             </div>
         </div>
     </div>
 
 
 
-    <section class="flex justify-center w-full">
+    <section id="idAnchor" class="flex justify-center w-full">
         <div class="w-3/4 sm:grid md:grid-cols-2 2xl:grid-cols-4 sm:m-0">
-            <div class="sm:w-2/3 m-6 mx-auto p-2 rounded-3xl shadow-lg">
+            <div class="sm:w-4/5 m-6 mx-auto p-2 rounded-3xl shadow-lg">
                 <img src="../../../assets/imgs/practicality.svg" alt="">
                 <div class="pl-6 pb-4">
                     <h3 class="text-xl mb-2 text-purple-uai font-semibold">Praticidade</h3>
                     <p>Transforme a complexidade em simplicidade: aprenda com praticidade!</p>
                 </div>
             </div>
-            <div class="sm:w-2/3 m-6 mx-auto p-2 rounded-3xl shadow-lg">
+            <div class="sm:w-4/5 m-6 mx-auto p-2 rounded-3xl shadow-lg">
                 <img src="../../../assets/imgs/acessibility.svg" alt="">
                 <div class="pl-6 pb-4">
                     <h3 class="text-xl mb-2 text-cyan-uai font-semibold">Acessibilidade</h3>
                     <p>Abra as portas do conhecimento, educação acessível ao seu alcance!</p>
                 </div>
             </div>
-            <div class="sm:w-2/3 m-6 mx-auto p-2 rounded-3xl shadow-lg">
+            <div class="sm:w-4/5 m-6 mx-auto p-2 rounded-3xl shadow-lg">
                 <img src="../../../assets/imgs/knowledge.svg" alt="">
                 <div class="pl-6 pb-4">
                     <h3 class="text-xl mb-2 text-blue-uai font-semibold">Conhecimento</h3>
                     <p>O poder do conhecimento em suas mãos: explore, aprenda, transforme-se!</p>
                 </div>
             </div>
-            <div class="sm:w-2/3 m-6 mx-auto p-2 rounded-3xl shadow-lg">
+            <div class="sm:w-4/5 m-6 mx-auto p-2 rounded-3xl shadow-lg">
                 <img src="../../../assets/imgs/efficiency.svg" alt="">
                 <div class="pl-6 pb-4">
                     <h3 class="text-xl mb-2 text-light-green-uai font-semibold">Eficiência</h3>
@@ -78,7 +78,7 @@
     <section class="my-12 flex justify-center w-full">
         <div class="p-8 sm:px-56 mx-auto text-center space-y-8">
             <h2 class="text-blue-uai text-4xl sm:text-5xl font-semibold">Tutorial</h2>
-            <p class="text-lg sm:text-2xl font-normal sm:font-medium">Bem-vindo onde aprender é fácil e rápido! Posso te
+            <p class="text-lg sm:text-[1.3rem] font-normal">Bem-vindo onde aprender é fácil e rápido! Posso te
                 mostrar como aproveitar ao máximo nossa plataforma? Aqui você alcança seus objetivos de aprendizagem de
                 forma simples e rápida. Vamos lá!</p>
             <iframe src="https://www.youtube.com/embed/1eLaBow7Zbo" frameborder="0" allowfullscreen
@@ -90,7 +90,7 @@
     <section class="relative p-12 px-0 bg-purple-uai text-white">
         <div class="w-2/3 mx-auto text-center space-y-6">
             <h2 class="text-4xl sm:text-5xl font-semibold">Depoimentos</h2>
-            <p class="text-lg sm:text-2xl font-normal sm:font-medium">Isso é o que falam do nosso aplicativo!</p>
+            <p class="text-lg sm:text-[1.3rem] font-normal">Isso é o que falam do nosso aplicativo!</p>
         </div>
         <div class="absolute top-0 right-0 w-16 h-full bg-border-carousel">
         </div>
@@ -286,7 +286,7 @@
         <div class="flex flex-col justify-between mx-auto sm:flex-row sm:justify-center">
             <div class="text-center space-y-4 sm:w-1/2 sm:text-start sm:px-4 sm:flex sm:flex-col sm:justify-center">
                 <h2 class="text-4xl sm:text-5xl font-semibold text-blue-uai">Redes sociais</h2>
-                <p class="text-lg sm:text-2xl font-normal sm:font-medium">Descubra uma nova forma de se envolver na
+                <p class="text-lg sm:text-[1.3rem] font-normal">Descubra uma nova forma de se envolver na
                     educação dos seus filhos com o Uai! Além de simplificar o acompanhamento escolar, oferecemos uma
                     comunidade vibrante nas redes sociais, repleta de dicas, atualizações e inspiração.</p>
                 <div class="flex gap-2 sm:justify-start justify-center">
@@ -295,7 +295,7 @@
                 </div>
             </div>
             <div class="mt-4 sm:ml-auto">
-                <img src="../../../assets/imgs/mockup-home.png" class="mx-auto sm:w-full" alt="">
+                <img src="../../../assets/imgs/mockup-home.png" class="mx-auto sm:w-full" alt="">   
             </div>
         </div>
     </section>
@@ -305,7 +305,7 @@
     <section class="p-8 sm:px-56 bg-blue-uai text-white-uai">
         <div class="mx-auto text-center space-y-6">
             <h2 class="text-4xl sm:text-5xl font-semibold">Junte-se a nós</h2>
-            <p class="text-lg sm:text-2xl font-normal sm:font-medium">Não fique de fora - siga-nos agora para se juntar
+            <p class="text-lg sm:text-[1.3rem] font-normal">Não fique de fora - siga-nos agora para se juntar
                 à conversa e fazer parte de uma rede de pais conectados! Baixe o Uai hoje mesmo e transforme sua
                 abordagem à educação. Juntos, podemos criar um futuro brilhante para nossos filhos.</p>
             <button class="bg-white-uai text-blue-uai py-1 px-5 rounded-md text-xl"
